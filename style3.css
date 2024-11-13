@@ -1,0 +1,195 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}		   
+p{
+	text-align: justify;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+span h2{
+    color: #286d34;
+    cursor: pointer;
+}
+.page-nav ul{
+    display: flex;
+	list-style: none;
+}
+.page-nav ul li a{
+    text-decoration: none;
+	color: #333;
+	margin-left: 30px;
+}   
+.page-nav ul li a:hover{
+    color: #286d34;
+}
+.container{
+    margin: 20px 200px;
+	display: flex;
+}
+.right-box{
+    width: 50%;
+	border: 1px solid #286d34;
+	border-radius: 10px;
+}
+.main-image-box{
+    padding: 30px 0px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.main-image{
+    height: 390px;
+	width: auto;
+}
+.small-images{
+    display: flex;
+	justify-content: space-between;
+	padding: 8px;
+	align-items: center;
+}
+.image-box{
+    margin: 0px 8px 8px 0px;
+	height: 100px;
+	width: 100px;
+	cursor: pointer;
+	border: 1px solid #286d34;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.image{
+    width: auto;
+	height: 90%;
+}
+.details-box{
+    width: 50%;
+	padding-left: 50px;
+}
+.details-box h2{
+    color: blue;
+}
+.inputs{
+    width: 100%;
+	justify-content: space-between;
+}
+td input{
+	height: 30px;
+}
+button{
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+	background-color:blue;
+	color: white;
+	margin-top: 14px;
+	cursor: pointer;
+}
+button:hover{
+    background-color:none;
+}
+.pnav{
+    margin: 25px auto;
+    display: flex;
+    padding: 2% 0px;
+    justify-content: space-between;
+    height: 5px;
+    width:fit-content;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow:0px 5px 20px rgba(0, 0, 0, 0.385) ;
+}
+.page-nav{
+    flex:1;
+}
+.page-nav ul li{
+    list-style-type:none;
+    display: inline-block;
+    padding: 1% 35px;
+    right: 25px;
+    position: relative;
+    height: 25px;
+	margin-top: -30px;
+    width:fit-content;
+    border-radius: 30px;
+    transition: .46s;
+}
+.page-nav ul li:hover{
+    background-color:  black;
+}
+.page-nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.page-nav ul li a:hover{
+    color: white;
+}
+.picon img{
+	display: inline-block;
+	position: relative;
+	width: 50px;
+	margin-left: 30px;
+}
+p1{
+	margin-right: 50px;
+	display: inline-block;
+	position: relative; 
+}
+hr.Line1{
+	border: 4px solid Lavender;
+    border-radius: 15px;
+}
+.Cus{
+	margin-left: 30px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.java{
+	font-weight: bold;
+	font-size: 20px;
+	color: red;
+	float: left;
+	margin-right: 250px;
+}
+.small-images{
+	background-color: none;
+}
+.b1 {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}

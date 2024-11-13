@@ -1,0 +1,112 @@
+body{
+	margin: 0;
+	background-image: url('Home images/wallpaper.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+h1{
+	text-shadow: 0.5px 0.5px EOFFFF;	
+	font-size:80px;
+	color:white;"
+}
+p{
+  color: rgba(248, 250, 247, 0.63);
+	background-color: rgba(0, 0, 0, 0.647);
+  border-radius: 10px;
+}
+.row{
+	display: flex;
+	height: 88%;
+	justify-content: center;
+	align-items: center;
+}
+.col{
+	flex-basis: 50%;
+}
+.card{
+	color: white;
+	text-align:center;
+	width: 220px;
+	height: 300px;
+	display: inline-block;
+	border-radius: 14px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.46s;
+}
+.card:hover{
+	transform: translateY(-23px);
+}
+.card1{
+	background-image: url('Home Images/Getstarted.jpg');
+}
+.card2{
+	background-image: url('Home Images/Shopnow.jpg');
+}
+.card3{
+	background-image: url('Home Images/Aboutus.jpg');
+}
+.button {
+  display: inline-block;
+  border-radius: 16px;
+  background-color: red;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 12px;
+  width: 140px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.45s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.45s;
+}
+
+.button:hover span {
+  padding-right: 18px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+form {
+  position: relative;
+}
+#search-bar {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 20px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
