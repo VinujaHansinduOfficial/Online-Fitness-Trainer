@@ -1,0 +1,295 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/*background image*/
+.bg-image{
+    background-image: url(4.png);
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height:fit-content;
+    min-height: 101%;
+    width:100%;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    margin-top: 0px;
+    color: black;
+}
+/*-------------for top navigation bar--------*/
+.navlink ul{
+    padding:8px;
+    overflow: hidden;
+    margin: 0;
+    height: auto;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.648);
+    width: 100%;
+
+}
+.navlink li{
+    float: left;
+    margin-left: 8px;
+    margin-top: 7px;
+
+}
+
+.navlink li a{
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    width: 99px;
+    height: auto;
+    text-align: center;
+    padding-top: 12px;
+    color: white;
+}
+.navlink li a:hover:not(.active a){
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    transition: 1s;
+}
+.navlink .active a{
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+}
+.profile{
+    height: 45px;
+    width: 45px;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 15px;
+    position: relative;
+    padding-bottom: 3px;
+}
+/*-------------for page navigation bar------------*/
+.pnav{
+    margin: 25px auto;
+    display: flex;
+    padding: 2% 0%;
+    justify-content: space-between;
+    height: 5px;
+    width:fit-content;
+    background-color: rgba(0, 0, 0, 0.801);
+    border-radius: 30px;
+    box-shadow:0px 5px 20px rgba(1, 0, 0, 0.385) ;
+}
+.page-nav{
+    flex:5;
+    position: relative;
+    bottom: 30px;
+
+}
+
+
+.page-nav ul li{
+    position:absolute;
+    list-style-type:none;
+    display: inline-block;
+    padding: 1% 35px;
+    right: 25px;
+    position: relative;
+    height: 25px;
+    width:fit-content;
+    border-radius: 30px;
+}
+.page-nav ul li:hover:not(.active){
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.page-nav ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.825);
+    font-weight: bold;
+}.page-nav ul li a:hover:not(.active a){
+    color: rgb(255, 255, 255);
+}
+.page-nav .active{
+    color: red;
+    background-color: rgb(255, 0, 0);
+}
+.page-nav .active a{
+    color: rgb(0, 0, 0);
+    background-color:inherit;
+}
+/*-------page content-------*/
+/* for faq.html page */
+.QA{
+    background-color: rgba(0, 0, 0, 0.766);
+    border: 2px solid red;
+    border-radius: 9px;
+    width: 80%;
+    padding: 8px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 28px;
+}
+
+.QA .question button{
+    background-color: rgb(255, 255, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 9px;
+    padding: 15px 20px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    cursor: pointer;
+
+}
+.question {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.QA h4{
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px 10px;
+    text-align: left;
+}
+.askq{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.askb{
+    background-color: rgb(255, 0, 0);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 9px;
+    padding: 15px 20px;
+    width: 49%;
+    justify-content: space-between;
+    cursor: pointer;
+    color: white;
+
+}
+header{
+    font-size: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: bolder;
+}
+/* for submitquestions.html page */
+.container{
+    background-color: rgba(0, 0, 0, 0.663);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px;
+}
+.container h1,h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+form{
+    text-align: center;
+}
+input[type="text"]{
+    border: 2px solid red;
+    width: 85%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.841);
+}
+textarea{
+    border: 2px solid red;
+    width: 85%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.841);
+}
+button[type="submit"]{
+    width:90% ;
+    padding: 10px 12px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: bolder;
+}
+/* for display.php file */
+#ask {
+    background-color: rgb(0, 102, 255);
+    color: white;
+    font-weight: bolder;
+    padding: 10px 10px;
+    border-radius: 9px;
+    border: none;
+    margin: 0px 10px;
+    
+}
+
+    
+#delete{
+    background-color: rgb(255, 1, 1);
+    color: white;
+    font-weight: bolder;
+    padding: 10px 10px;
+    border-radius: 9px;
+    border: none;
+    margin: 0px 10px;
+}
+
+#update{
+    background-color: rgb(0, 132, 248);
+    color: white;
+    font-weight: bolder;
+    padding: 10px 10px;
+    border-radius: 9px;
+    border: none;
+    margin: 0px 10px;
+}
+#displaytable{
+    border-collapse: collapse;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#displaytable th{
+    text-align: center;
+}
+#displaytable th,td{
+    color: rgb(4, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    height: 40px;
+    font-size: large;
+    word-wrap: break-word;
+    max-width: 450px;
+}
+#displaytable tr:nth-child(even) {background-color: #e1e1e1;}
+
+/* for display page */
+#edit{
+    background-color: rgb(0, 132, 248);
+    color: white;
+    font-weight: bolder;
+    padding: 10px 30px;
+    border-radius: 9px;
+    border: none;
+    margin: 0px 10px;
+}
+    
