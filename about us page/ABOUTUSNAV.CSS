@@ -1,0 +1,45 @@
+.navlink ul{
+    padding:8px;
+    margin: 0;
+    height: auto;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(234, 234, 234, 0.566);
+    border-radius: 40px;
+}
+.navlink li{
+    float: left;
+    margin-left: 8px;
+    margin-top: 7px;
+
+}
+
+.navlink li a{
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    width: 99px;
+    height: auto;
+    text-align: center;
+    padding-top: 12px;
+}
+.navlink li a:hover:not(.active){
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+.active a{
+    background-color: rgb(0, 255, 94);
+    color: rgb(0, 0, 0);
+}
+.profile{
+    height: 45px;
+    width: 45px;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 5px;
+    position: relative;
+    padding-bottom: 3px;
+}

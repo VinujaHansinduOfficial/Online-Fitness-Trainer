@@ -1,0 +1,159 @@
+/*Apply background image*/
+body {		
+	background-image: url('images/bg1.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: cover;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+/*Customize navigation bar*/
+.navlink ul{
+  padding:8px;
+  margin: 0px;
+  height: auto;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.648);
+
+}
+.navlink li{
+  float: left;
+  margin-left: 8px;
+  margin-top: 7px;
+
+}
+
+.navlink li a{
+  display: block;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  width: 99px;
+  height: auto;
+  text-align: center;
+  padding-top: 12px;
+  color: white;
+}
+.navlink li a:hover:not(.active a,.profilelink){
+  background-color: rgb(9, 9, 9);
+  color: whitesmoke;
+  transition: 1s;
+}
+.navlink .active a{
+  background-color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
+}
+.profile{
+  height: 45px;
+  width: 45px;
+  vertical-align: middle;
+  align-content: center;
+  border-radius: 50%;
+  margin-right: 15px;
+  position: relative;
+  margin-bottom: 100px;
+  display: flex;
+}
+#profilelink{
+  padding-bottom: 50px;
+  padding-right: 50px;
+  display: contents;
+}
+
+/*Customize buttons in cards*/
+.button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.45s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.45s;
+}
+
+.button:hover span {
+  padding-right: 18px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*Customize cards in the body*/
+div.card {
+  border: 1px solid #000000;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  width:fit-content;
+  height:fit-content;
+  color: white;
+  
+}
+
+div.card:hover {
+  border: 1px solid white;
+}
+
+div.card img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.checked {
+    color: orange;
+}

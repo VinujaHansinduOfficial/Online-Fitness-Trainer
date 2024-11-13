@@ -1,0 +1,269 @@
+/*Apply background image*/
+body {		
+	background-image: url('images/bg1.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: cover;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+/*Customize navigation bar*/
+.navlink ul{
+  padding:8px;
+  margin: 0px;
+  height: auto;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.648);
+
+}
+.navlink li{
+  float: left;
+  margin-left: 8px;
+  margin-top: 7px;
+
+}
+
+.navlink li a{
+  display: block;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  width: 99px;
+  height: auto;
+  text-align: center;
+  padding-top: 12px;
+  color: white;
+}
+.navlink li a:hover:not(.active a,.profilelink){
+  background-color: rgb(9, 9, 9);
+  color: whitesmoke;
+  transition: 1s;
+}
+.navlink .active a{
+  background-color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
+}
+.profile{
+  height: 45px;
+  width: 45px;
+  vertical-align: middle;
+  align-content: center;
+  border-radius: 50%;
+  margin-right: 15px;
+  position: relative;
+  margin-bottom: 100px;
+  display: flex;
+}
+#profilelink{
+  padding-bottom: 50px;
+  padding-right: 50px;
+  display: contents;
+}
+
+
+/*Customize container that hold the image box and details box*/
+.container{
+  border: 1px solid #999797;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius:25px;
+  margin: 20px 200px;
+  display: flex;
+}
+
+/*Customize image box*/
+.right-box{
+  width: 50%;
+  
+}
+
+/*Customize main image box*/
+.main-image-box{
+  padding: 30px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-image{
+  height: 250px;
+  width: auto;
+}
+
+/*Customize small images*/
+.small-images{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  align-items: center;
+}
+
+.image-box{
+  margin: 0px 8px 8px 0px;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image{
+  width: auto;
+  height: 50%;
+}
+
+/*Customize small images button*/
+.b1 {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+/*Customize details box*/
+.details-box{
+  color: white;
+  text-align: justify;
+  padding: 0px 8px;
+  display: block;
+  width:fit-content;
+  height:fit-content;
+  
+}
+
+/*Customize recommended item box*/
+.shopcontainer {
+  position: relative;
+  width: 120px;
+}
+
+.shopimage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.shopmiddle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.shopcontainer:hover .shopimage {
+  opacity: 0.3;
+}
+
+.shopcontainer:hover .shopmiddle {
+  opacity: 1;
+}
+
+/*Customize add library button in details box*/
+.button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    border-radius:15px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+/*Customize text background*/
+.details{
+  margin:30px 45px;
+  padding: 35px 8px;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  border-radius:25px;
+  width:fit-content;
+  height:fit-content;
+  color: white;
+  
+}
+.details p{
+  margin: 0px 50px;
+}
+.details h2{
+  margin-top: 45px;
+  padding-left: 30px;
+}
+.details ol li{
+  margin: 0px 50px;
+}
+
+/*Customize review box*/
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.textbox{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius:5px;
+  padding: 0px 8px;
+  border: 1px solid #999797;
+  border-radius:25px;
+}

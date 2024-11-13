@@ -1,0 +1,232 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-image{
+    background-image: url(back.jpg);
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height:fit-content;
+    width: fit-content;
+    padding:0px;
+
+
+    color: black;
+}
+/*-------------for top navigation bar--------*/
+.navlink ul{
+    padding:8px;
+    margin: 0px;
+    height: auto;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.648);
+
+}
+.navlink li{
+    float: left;
+    margin-left: 8px;
+    margin-top: 7px;
+
+}
+
+.navlink li a{
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    width: 99px;
+    height: auto;
+    text-align: center;
+    padding-top: 12px;
+    color: white;
+}
+.navlink li a:hover:not(.active a,.profilelink){
+    background-color: rgb(9, 9, 9);
+    color: whitesmoke;
+    transition: 1s;
+}
+.navlink .active a{
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+}
+.profile{
+    height: 45px;
+    width: 45px;
+    vertical-align: middle;
+    align-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    position: relative;
+    margin-bottom: 100px;
+    display: flex;
+}
+#profilelink{
+    padding-right: 20px;
+}
+/*-------------for page navigation bar------------*/
+.pnav{
+    margin: 25px auto;
+    display: flex;
+    padding: 2% 0%;
+    justify-content: space-between;
+    height: 5px;
+    width:fit-content;
+    background-color: rgba(0, 0, 0, 0.801);
+    border-radius: 30px;
+    box-shadow:0px 5px 20px rgba(1, 0, 0, 0.385) ;
+}
+.page-nav{
+    flex:5;
+    position: relative;
+    bottom: 30px;
+
+}
+
+
+.page-nav ul li{
+    position:absolute;
+    list-style-type:none;
+    display: inline-block;
+    padding: 1% 35px;
+    right: 25px;
+    position: relative;
+    height: 25px;
+    width:fit-content;
+    border-radius: 30px;
+    transition: .5s;
+}
+.page-nav ul li:hover:not(.active){
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.page-nav ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.825);
+    font-weight: bold;
+}.page-nav ul li a:hover:not(.active a){
+    color: rgb(255, 255, 255);
+}
+.page-nav .active{
+    color: red;
+    background-color: rgb(255, 0, 0);
+}
+.page-nav .active a{
+    color: rgb(0, 0, 0);
+    background-color:inherit;
+}
+
+
+/*-------------------for details tiles------------------*/
+.details{
+    margin:30px 45px;
+    padding: 35px 8px;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    border-radius:25px;
+    width:fit-content;
+    height:fit-content;
+    color: white;
+    
+}
+.details p{
+    margin: 0px 50px;
+}
+.details h2{
+    margin-top: 45px;
+    padding-left: 30px;
+}
+.details ol li{
+    margin: 0px 50px;
+}
+.details .middleimg{
+    width: 85%;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    display: block;
+}
+.details .gallary{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+
+
+}
+.details .gallary img{
+    display:inline-block;
+    width: 25%;
+    padding: 0px 0px;
+    height: 200px;
+    justify-content: space-between;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-left: 50px;
+}
+.details .gallary img:hover{
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.649);
+    transition: .4s;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 250px;
+    margin-right: 250px;
+    color: rgb(255, 255, 255);
+}
+.contact-col button{
+    background-color: rgb(51, 255, 0);
+    padding: 8px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    border: none;
+}
+.contact-col{
+    box-shadow: 5px 5px 30px rgb(0, 0, 0);
+    display: block;
+    border-radius: 15px;
+    padding: 25px 40px;
+    width: 200px;
+    height: 155px;
+    background-color: rgba(171, 103, 0, 0.515);
+    
+}
+.contact-col h2{
+    padding-right: 50px;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+.contact-col p{
+    display: block;
+    padding-right: 50px;
+    margin-left: 0px;
+    text-align: left;
+    width: 480px;
+    font-weight: bold;
+}
+.contact-col:hover{
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.623);
+    transition: .2s;
+}
+.contact-col a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
